@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <side-bar></side-bar>
   <router-view/>
 </template>
 
@@ -28,3 +29,9 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script>
+import SideBar from "@/components/SideBar";
+export default {
+  components: {SideBar}
+}
+</script>
